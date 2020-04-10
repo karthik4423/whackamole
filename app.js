@@ -2,6 +2,7 @@ const square = document.querySelectorAll('.square')
 const mole = document.querySelectorAll('.mole')
 const timeleft = document.querySelector('#time-left')
 let score = document.querySelector('#score')
+let buttn = document.querySelector('#start')
 
 let result = 0
 let currentTime = timeleft.textContent
@@ -43,5 +44,8 @@ function countDown() {
     }
 }
 
-let timerId = setInterval(countDown, 1000)
-moveMole()
+
+buttn.addEventListener('click', () => {
+    moveMole()
+    let timerId = setInterval(countDown, 1000)
+})
