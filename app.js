@@ -46,7 +46,7 @@ square.forEach(id => {
         }
         if (result > 50 && first50) {
             timeout = timeout - 150
-            cheer.textContent = "MASTERCLASS!"
+            cheer.textContent = "How much can you score?!"
             first50 = false
         }
         if (result > 65 && first65) {
