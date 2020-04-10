@@ -32,7 +32,7 @@ square.forEach(id => {
         if (result > 10 && first10) {
             cheer.textContent = "10 Points! Whooho!\nSpeeding UP!"
             first10 = false
-            timeout = timeout - 200
+            timeout = timeout - 250
                 //moveMole(800)
         }
         if (result > 25 && first25) {
